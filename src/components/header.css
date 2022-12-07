@@ -1,0 +1,62 @@
+.div-header {
+    height: 300px;
+    width: 70%;
+    background-color: #F7F7F7;
+}
+
+.arriba-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'titulo flecha';
+    height: 200px;
+}
+
+.titulo-main {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+
+.titulo-pokedex {
+    font-size: 60px;
+    margin-bottom: 10%;
+}
+
+.pokeball-main {
+    width: 60px;
+    height: 60px;
+    padding-right: 5%;
+    margin-top: 6%;
+}
+
+.numeral {
+    font-size: 40px;
+    margin-top: 8%;
+}
+
+.flecha-abajo {
+    grid-area: flecha;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 5%;
+}
+
+.flecha-abajo2 {
+    width: 50px;
+    height: 50px;
+    margin-top: 8%;
+}
+
+.abajo-header {
+    display: flex;
+    justify-content: center;
+}
+
+.buscador2 {
+    height: 35px;
+    width: 1000px;
+    text-align: center;
+    border-radius: 13px;
+}
