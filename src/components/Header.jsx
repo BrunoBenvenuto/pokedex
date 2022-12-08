@@ -19,17 +19,23 @@ function Header(props) {
     <div className="div-header">
       <div className="arriba-header">
         <div className="titulo-main">
-          <img src={pokeball} alt="hola" className="pokeball-main" />
+          <img src={pokeball} alt="logo pokeball" className="pokeball-main" />
           <h1 className="titulo-pokedex">Pokédex</h1>
         </div>
         <div className="flecha-abajo">
           <p className="numeral">#</p>
-          <img src={arrow} alt="hola" className="flecha-abajo2" />
+          <img src={arrow} alt="flecha" className="flecha-abajo2" />
         </div>
       </div>
       <div className="abajo-header">
         <div className="buscador">
-          <input type="text" placeholder="Buscar" onChange={onChangeBuscar} className="buscador2" />
+          <input
+            type="text"
+            placeholder="Buscar"
+            value={buscar}
+            onChange={onChangeBuscador}
+            className="buscador2"
+          />
         </div>
       </div>
     </div>
