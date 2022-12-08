@@ -32,8 +32,8 @@ function Header(props) {
           <input
             type="text"
             placeholder="Buscar"
-            value={buscar}
-            onChange={onChangeBuscador}
+
+            onChange={onChangeBuscar}
             className="buscador2"
           />
         </div>
