@@ -2,11 +2,11 @@
 .main{
     width: 70%;
     height: 100%;
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: #F7F7F7;
 }
 
 .pokemones {
