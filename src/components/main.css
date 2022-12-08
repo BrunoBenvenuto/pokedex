@@ -1,5 +1,4 @@
-
-.main{
+.main {
     width: 70%;
     height: 100%;
     display: flex;
@@ -21,7 +20,7 @@
     grid-template-columns: 1fr;
     grid-template-areas: 'numero'
         'foto'
-        'nombre'; 
+        'nombre';
 }
 
 .numero-pokemon-cajita {
