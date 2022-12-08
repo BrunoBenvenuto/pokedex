@@ -3,12 +3,11 @@ import "./main.css";
 import pokemones from "../data/data.js";
 import { useState } from "react";
 
-function Main() {
-  const [datosPokemones, setDatosPokemones] = useState(pokemones);
+function Main(props) {
 
   return (
     <div className="main">
-      {datosPokemones.map((pokemones) => {
+      {props.datosPokemones.map((pokemones) => {
         return (
           <div className="pokemones" style={{ borderColor: pokemones.color1 }}>
             <div
