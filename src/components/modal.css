@@ -23,6 +23,7 @@
 .pokeball {
     height: 310px;
     width: 310px;
+    position: absolute;
     opacity: 10%;
 }
 
@@ -38,6 +39,7 @@
 
 .pokemon-nombre-div {
     display: flex;
+    position: fixed;
 }
 
 .flecha-izquierda {

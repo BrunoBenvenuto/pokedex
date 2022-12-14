@@ -6,7 +6,6 @@ import pokemones from "./data/data.js";
 import Modal from './components/Modal';
 
 
-
 function App() {
   const [datosPokemones, setDatosPokemones] = useState(pokemones);
   const filtrar = (buscar) => {
