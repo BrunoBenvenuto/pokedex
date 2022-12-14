@@ -5,6 +5,10 @@ import { useState } from "react";
 
 function Main(props) {
 
+  pokemones.sort()
+
+  console.log(pokemones)
+
   return (
     <div className="main">
       {props.datosPokemones.map((pokemones) => {

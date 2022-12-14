@@ -1,40 +1,33 @@
 .modal {
     height: 1000px;
     width: 550px;
-    background-color: #6493EB;
     border-radius: 20px;
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-areas: 'header'
         'main';
-    font-family: 'poppins';
 }
 
 .div-pokemon {
-    position: fixed;
-    padding-left: 5%;
-    padding-top: 5%;
+    /* padding-left: 5%;
+    padding-top: 5%; */
 }
 
-.pokemon {
-    height: 300px;
-    width: 300px;
-    position: fixed;
-}
+.pokemon {}
 
 .div-pokeball {
-    padding-left: 100%;
+    padding-left: 80%;
     padding-top: 5%;
 }
 
 .pokeball {
     height: 310px;
     width: 310px;
-    position: fixed;
     opacity: 10%;
 }
 
 .header-modal {
+    height: 300px;
     grid-area: header;
     color: white;
     font-size: 24px;
@@ -45,8 +38,6 @@
 
 .pokemon-nombre-div {
     display: flex;
-    flex-direction: row;
-    position: fixed;
 }
 
 .flecha-izquierda {
@@ -70,7 +61,6 @@
 }
 
 .main-modal {
-    background-color: #6493EB;
     border-radius: 20px;
     grid-area: main;
     padding: 1%;
