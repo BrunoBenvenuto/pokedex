@@ -5,15 +5,21 @@ import { useState } from 'react';
 import pokemones from "./data/data.js";
 
 
-
 function App() {
   const [datosPokemones, setDatosPokemones] = useState(pokemones);
   const filtrar = (buscar) => {
-    const resultado = datosPokemones.filter((pokemon) => {
-      return pokemon.nombre.toLowerCase().includes(buscar.toLowerCase())
-    })
-    setDatosPokemones(resultado)
+    if (buscar !== "") {
+      const resultado = [...datosPokemones].filter((pokemon) => {
+        return pokemon.nombre.toLowerCase().includes(buscar.toLowerCase())
+      })
+      setDatosPokemones(resultado)
+    }
+    else {
+      setDatosPokemones(pokemones)
+    }
+
   }
+
   return (
     <div className="App">
       <Header filtrar={filtrar} />

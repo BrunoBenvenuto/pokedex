@@ -1,19 +1,14 @@
 import "./header.css";
 import React from "react";
-import { useState } from 'react';
+import { useState } from "react";
 import arrow from "../imgPokemones/Arrow.svg";
 import pokeball from "../imgPokemones/Pokeball.png";
 import pokemones from "../data/data";
 
 function Header(props) {
-
-
   const onChangeBuscar = (e) => {
-    props.filtrar(e.target.value)
-  }
-
-
-
+    props.filtrar(e.target.value);
+  };
 
   return (
     <div className="div-header">
@@ -32,7 +27,6 @@ function Header(props) {
           <input
             type="text"
             placeholder="Buscar"
-
             onChange={onChangeBuscar}
             className="buscador2"
           />
