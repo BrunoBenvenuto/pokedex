@@ -1,13 +1,11 @@
 .modal {
     height: 1000px;
     width: 550px;
-    background-color: #6493EB;
     border-radius: 20px;
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-areas: 'header'
-        'main';
-    font-family: 'poppins';
+                         'main';
 }
 
 .div-pokemon {
@@ -30,7 +28,7 @@
 .pokeball {
     height: 310px;
     width: 310px;
-    position: fixed;
+    position: absolute;
     opacity: 10%;
 }
 
@@ -45,7 +43,6 @@
 
 .pokemon-nombre-div {
     display: flex;
-    flex-direction: row;
     position: fixed;
 }
 
@@ -70,7 +67,6 @@
 }
 
 .main-modal {
-    background-color: #6493EB;
     border-radius: 20px;
     grid-area: main;
     padding: 1%;

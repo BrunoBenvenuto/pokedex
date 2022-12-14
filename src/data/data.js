@@ -11,7 +11,7 @@ import aron from "../imgPokemones/aron.png";
 
 let pokemones = [
     {
-        id: "#001",
+        id: "001",
         nombre: "Bulbasaur", 
         img: bulbasaur,
         tipo: "Grass Poison",
@@ -33,7 +33,7 @@ let pokemones = [
     },
 
     {
-        id: "#004",
+        id: "004",
         nombre: "Charmander", 
         img: charmander, 
         tipo: "Fire",
@@ -54,7 +54,7 @@ let pokemones = [
     },
 
     {
-        id: "#007",
+        id: "007",
         nombre: "Squirtle", 
         img: squirtle,
         tipo: "Water",
@@ -75,7 +75,7 @@ let pokemones = [
     },
 
     {
-        id: "#012",
+        id: "012",
         nombre: "Butterfree", 
         img: butterfree,
         tipo: "Bug Flying",
@@ -97,7 +97,7 @@ let pokemones = [
     },
 
     {
-        id: "#025",
+        id: "025",
         nombre: "Pikachu", 
         img: pikachu,
         tipo: "Electric",
@@ -118,7 +118,7 @@ let pokemones = [
     },
 
     {
-        id: "#082",
+        id: "082",
         nombre: "Gastly",
         img: gastly,
         tipo: "ghost",
@@ -138,7 +138,7 @@ let pokemones = [
     },
 
     {
-        id: "#132",
+        id: "132",
         nombre: "Ditto",
         img: ditto,
         tipo: "normal",
@@ -158,7 +158,7 @@ let pokemones = [
     },
 
     {
-        id: "#152",
+        id: "152",
         nombre: "Mew", 
         img: mew,
         tipo: "Psychic",
@@ -179,7 +179,7 @@ let pokemones = [
     },
 
     {
-        id: "#304",
+        id: "304",
         nombre: "Aron",
         img: aron,
         tipo: "steel rock",
