@@ -5,23 +5,18 @@
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-areas: 'header'
-                         'main';
+        'main';
 }
 
 .div-pokemon {
-    position: fixed;
-    padding-left: 5%;
-    padding-top: 5%;
+    /* padding-left: 5%;
+    padding-top: 5%; */
 }
 
-.pokemon {
-    height: 300px;
-    width: 300px;
-    position: fixed;
-}
+.pokemon {}
 
 .div-pokeball {
-    padding-left: 100%;
+    padding-left: 80%;
     padding-top: 5%;
 }
 
@@ -33,6 +28,7 @@
 }
 
 .header-modal {
+    height: 300px;
     grid-area: header;
     color: white;
     font-size: 24px;

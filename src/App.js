@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import { useState } from 'react';
 import pokemones from "./data/data.js";
+import Modal from './components/Modal';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <div className="App">
       <Header filtrar={filtrar} />
       <Main datosPokemones={datosPokemones} />
+      <Modal datosPokemones={pokemones} />
     </div>
   );
 }

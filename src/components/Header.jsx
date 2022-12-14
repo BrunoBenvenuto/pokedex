@@ -7,8 +7,9 @@ import pokemones from "../data/data";
 
 function Header(props) {
   const onChangeBuscar = (e) => {
-    props.filtrar(e.target.value);
-  };
+    props.filtrar(e.target.value)
+  }
+
 
   return (
     <div className="div-header">
