@@ -5,10 +5,30 @@
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-areas: 'header'
-                         'main';
+        'main';
+}
+
+.div-pokemon {
+    /* padding-left: 5%;
+    padding-top: 5%; */
+}
+
+.pokemon {}
+
+.div-pokeball {
+    padding-left: 80%;
+    padding-top: 5%;
+}
+
+.pokeball {
+    height: 310px;
+    width: 310px;
+    position: absolute;
+    opacity: 10%;
 }
 
 .header-modal {
+    height: 300px;
     grid-area: header;
     color: white;
     font-size: 1.2rem;

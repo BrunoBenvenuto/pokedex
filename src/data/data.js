@@ -41,7 +41,7 @@ let pokemones = [
         color1: "#F57D31", 
         peso: "8,5 kg",
         altura: "0,6 m",
-        movimientos: "Mega-Punch  Fire-Punch",
+        movimientos: "Mega-Punch Fire-Punch",
         descripcion: "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
         baseStates: {
             hp: "039",

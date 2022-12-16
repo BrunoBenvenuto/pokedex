@@ -5,8 +5,9 @@ import pokeball from "../imgPokemones/Pokeball.png";
 
 function Header(props) {
   const onChangeBuscar = (e) => {
-    props.filtrar(e.target.value);
-  };
+    props.filtrar(e.target.value)
+  }
+
 
   return (
     <div className="div-header">
