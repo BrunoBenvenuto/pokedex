@@ -1,7 +1,6 @@
 import React from "react";
 import "./main.css";
 import { Link } from "react-router-dom";
-import pokemones from "../data/data.js";
 import { useState } from "react";
 
 function Main(props) {
@@ -11,13 +10,16 @@ function Main(props) {
     <div className="main">
       {props.datosPokemones.map((pokemones) => {
         return (
-          <div className="pokemones" style={{ borderColor: pokemones.color1 }}>
-            <Link to={`/pokemones/${pokemones.id}`}>
+          <Link to={`/pokemones/${pokemones.id}`}>
+            <div
+              className="pokemones"
+              style={{ borderColor: pokemones.color1 }}
+            >
               <div
                 className="numero-pokemon-cajita"
                 style={{ color: pokemones.color1 }}
               >
-                <p>{pokemones.id}</p>
+                <p>#{pokemones.id}</p>
               </div>
               <div>
                 <div className="foto-pokemon-cajita">
@@ -34,8 +36,8 @@ function Main(props) {
               >
                 <p>{pokemones.nombre}</p>
               </div>
-            </Link>
-          </div>
+            </div>
+          </Link>
         );
       })}
     </div>

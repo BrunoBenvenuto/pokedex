@@ -13,7 +13,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 function Modal() {
   let { pokemonId } = useParams();
-  const arrayFiltrado = pokemones.filter((pokemon) => {
+  const pokemon = pokemones.find((pokemon) => {
     if (pokemon.id === pokemonId) {
       return pokemon;
     }
@@ -72,35 +72,39 @@ function Modal() {
         <div className="main-modal">
           <div className="main-modal2">
             <div className="type">
-              <button className="type-button">Water</button>
+              <p
+                className="type-button"
+                style={{ backgroundColor: pokemon.color1 }}
+              >
+                {pokemon.tipo1}
+              </p>
             </div>
             <div className="about">
-              <h3 className="about-titulo">About</h3>
+              <h3 className="about-titulo" style={{ color: pokemon.color1 }}>
+                About
+              </h3>
               <div className="characteristics">
-                <div>
+                <div className="peso">
                   <div className="weight-height">
                     <img src={weight} alt="weight" />
-                    <p>9.0 kg</p>
+                    <p>{pokemon.peso}</p>
                   </div>
                   <p>Weight</p>
                 </div>
-                <div>
+                <div className="altura">
                   <div className="weight-height">
                     <img src={height} alt="height" />
-                    <p>0.5 m</p>
+                    <p>{pokemon.altura}</p>
                   </div>
                   <p>Height</p>
                 </div>
-                <div>
-                  <p>Torrent Rain-Dish</p>
+                <div className="movimientos">
+                  <p>{pokemon.movimientos}</p>
                   <p>Moves</p>
                 </div>
               </div>
               <div className="description">
-                <p>
-                  When it reacts its long neck into its shell, it squirts out
-                  water with vigorous force
-                </p>
+                <p>{pokemon.descripcion}</p>
               </div>
             </div>
 
