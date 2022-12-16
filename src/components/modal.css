@@ -117,7 +117,40 @@
     padding-right: 5%;
 }
 
+.div-base-states {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.div-stats-numero {
+    border-left: thick solid #000;
+    border-left-width: thin;
+    height: 175px;
+    padding-left: 20px;
+}
+
+.div-barras {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .stats-title {
     text-align: center;
-    color: #6493EB;
+    font-size: 30px;
+}
+
+.stats-valores {
+    display: flex;
+    margin: 5px;
+}
+
+.stats {
+    display: flex;
+    margin: 11.8px;
+}
+
+.stats-numero {
+    margin: 5px;
 }

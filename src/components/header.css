@@ -31,6 +31,12 @@
 .numeral {
     font-size: 2rem;
     margin-top: 8%;
+    border: none;
+}
+
+.numeral2 {
+    display: flex;
+    flex-direction: column;
 }
 
 .flecha-abajo {

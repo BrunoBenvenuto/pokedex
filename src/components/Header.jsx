@@ -19,7 +19,7 @@ function Header(props) {
           <h1 className="titulo-pokedex">Pokédex</h1>
         </div>
         <div className="flecha-abajo">
-          <p className="numeral">#</p>
+          <button className="numeral" /* onClick={() => sorting("nombre")} */>#</button>
           <img src={arrow} alt="flecha" className="flecha-abajo2" />
         </div>
       </div>

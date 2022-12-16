@@ -5,6 +5,8 @@ import pokemones from "../data/data.js";
 import { useState } from "react";
 
 function Main(props) {
+
+
   return (
     <div className="main">
       {props.datosPokemones.map((pokemones) => {

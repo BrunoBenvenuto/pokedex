@@ -12,10 +12,10 @@ import aron from "../imgPokemones/aron.png";
 let pokemones = [
     {
         id: "001",
-        nombre: "Bulbasaur", 
+        nombre: "Bulbasaur",
         img: bulbasaur,
         tipo: "Grass Poison",
-        color1: "#74CB48", 
+        color1: "#74CB48",
         color2: "#A43E9E",
         peso: "6,9 kg",
         altura: "0,7 m",
@@ -34,10 +34,10 @@ let pokemones = [
 
     {
         id: "004",
-        nombre: "Charmander", 
-        img: charmander, 
+        nombre: "Charmander",
+        img: charmander,
         tipo: "Fire",
-        color1: "#F57D31", 
+        color1: "#F57D31",
         peso: "8,5 kg",
         altura: "0,6 m",
         movimientos: "Mega-Punch Fire-Punch",
@@ -55,7 +55,7 @@ let pokemones = [
 
     {
         id: "007",
-        nombre: "Squirtle", 
+        nombre: "Squirtle",
         img: squirtle,
         tipo: "Water",
         color1: "#6493EB",
@@ -76,10 +76,10 @@ let pokemones = [
 
     {
         id: "012",
-        nombre: "Butterfree", 
+        nombre: "Butterfree",
         img: butterfree,
         tipo: "Bug Flying",
-        color1: "#A7B723", 
+        color1: "#A7B723",
         color2: "#A891EC",
         peso: "32 kg",
         altura: "1,1 m",
@@ -98,10 +98,10 @@ let pokemones = [
 
     {
         id: "025",
-        nombre: "Pikachu", 
+        nombre: "Pikachu",
         img: pikachu,
         tipo: "Electric",
-        color1: "#F9CF30", 
+        color1: "#F9CF30",
         peso: "6,0 kg",
         altura: "0,4 m",
         movimientos: "Mega-Punch Pay-Day",
@@ -122,12 +122,12 @@ let pokemones = [
         nombre: "Gastly",
         img: gastly,
         tipo: "ghost",
-        color1: "#70559B", 
+        color1: "#70559B",
         peso: "0.1 kg",
         altura: "1.3 m",
         movimientos: "levitate",
         descripcion: "Born from gases, anyone would faint if engulfed by its gaseous body, wich contains poison.",
-        baseStats: {
+        baseStates: {
             hp: "030",
             atk: "035",
             def: "030",
@@ -142,12 +142,12 @@ let pokemones = [
         nombre: "Ditto",
         img: ditto,
         tipo: "normal",
-        color1: "#AAA67F", 
+        color1: "#AAA67F",
         peso: "4 kg",
         altura: "0.3 m",
         movimientos: "Limber Imposter",
         descripcion: "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes.",
-        baseStats: {
+        baseStates: {
             hp: "048",
             atk: "048",
             def: "048",
@@ -159,10 +159,10 @@ let pokemones = [
 
     {
         id: "152",
-        nombre: "Mew", 
+        nombre: "Mew",
         img: mew,
         tipo: "Psychic",
-        color1: "#FB5584", 
+        color1: "#FB5584",
         peso: "4,0 kg",
         altura: "0,4 m",
         movimientos: "Synchronize",
@@ -183,13 +183,13 @@ let pokemones = [
         nombre: "Aron",
         img: aron,
         tipo: "steel rock",
-        color1: "#B7B9D0", 
+        color1: "#B7B9D0",
         color2: "#B69E31",
         peso: "60,0 kg",
         altura: "0.4 m",
         movimientos: "Sturdy Rock-Head",
         descripcion: "It eats iron ore - and sometimes railroad tracks - to build up the steel armor that protects its body.",
-        baseStats: {
+        baseStates: {
             hp: "050",
             atk: "070",
             def: "100",
