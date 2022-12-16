@@ -18,7 +18,7 @@ function Modal() {
       return pokemon;
     }
   });
-  const pokemon = arrayFiltrado[0];
+
   const getPokemonColor = () => {
     if (pokemon?.color1 === "#74CB48") {
       return "green"
