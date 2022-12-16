@@ -2,14 +2,14 @@ import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import { useState } from 'react';
-import pokemones from "./data/data.js";
+import pokemones from './data/data';
 
 
 function App() {
   const [datosPokemones, setDatosPokemones] = useState(pokemones);
   const filtrar = (buscar) => {
     if (buscar !== "") {
-      const resultado = [...datosPokemones].filter((pokemon) => {
+      const resultado = [...pokemones].filter((pokemon) => {
         return pokemon.nombre.toLowerCase().includes(buscar.toLowerCase())
       })
       setDatosPokemones(resultado)
@@ -17,12 +17,29 @@ function App() {
     else {
       setDatosPokemones(pokemones)
     }
-
   }
+
+  const ordenAb = () => {
+    const pokemonesOrdenados = [...datosPokemones].sort((a, b) => {
+      if (a.nombre > b.nombre) return 1;
+      if (a.nombre < b.nombre) return -1;
+      return 0;
+    });
+    setDatosPokemones(pokemonesOrdenados);
+  };
+
+  const ordenId = () => {
+    const pokemonesOrdenados = [...datosPokemones].sort((a, b) => {
+      if (a.id > b.id) return 1;
+      if (a.id < b.id) return -1;
+      return 0;
+    });
+    setDatosPokemones(pokemonesOrdenados);
+  };
 
   return (
     <div className="App">
-      <Header filtrar={filtrar} />
+      <Header filtrar={filtrar} ordenAb={ordenAb} ordenId={ordenId}/>
       <Main datosPokemones={datosPokemones} />
     </div>
   );

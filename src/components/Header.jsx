@@ -1,9 +1,7 @@
 import "./header.css";
 import React from "react";
-import { useState } from "react";
 import arrow from "../imgPokemones/Arrow.svg";
 import pokeball from "../imgPokemones/Pokeball.png";
-import pokemones from "../data/data";
 
 function Header(props) {
   const onChangeBuscar = (e) => {
@@ -18,7 +16,12 @@ function Header(props) {
           <h1 className="titulo-pokedex">Pokédex</h1>
         </div>
         <div className="flecha-abajo">
-          <p className="numeral">#</p>
+          <button className="numeral" onClick={() => props.ordenAb()}>
+            AB
+          </button>
+          <button className="numeral" onClick={() => props.ordenId()}>
+            #
+          </button>
           <img src={arrow} alt="flecha" className="flecha-abajo2" />
         </div>
       </div>
