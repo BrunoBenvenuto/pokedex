@@ -6,6 +6,7 @@ import pokemones from "./data/data.js";
 import Modal from './components/Modal';
 
 
+
 function App() {
   const [datosPokemones, setDatosPokemones] = useState(pokemones);
   const filtrar = (buscar) => {
@@ -42,7 +43,6 @@ function App() {
     <div className="App">
       <Header filtrar={filtrar} ordenAb={ordenAb} ordenId={ordenId}/>
       <Main datosPokemones={datosPokemones} />
-      <Modal datosPokemones={pokemones} />
     </div>
   );
 }

@@ -8,6 +8,7 @@ import App from "./App";
 import Modal from "./components/Modal";
 import "./index.css";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,8 +22,11 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+
     <RouterProvider router={router} />
+
   </React.StrictMode>
+
 );
 
 

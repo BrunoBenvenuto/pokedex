@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function Main(props) {
+
+
   return (
     <div className="main">
       {props.datosPokemones.map((pokemones) => {
